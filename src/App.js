@@ -33,7 +33,7 @@ function App() {
   return (
     <div className="App">
       <HomeNav></HomeNav>
-      <div className="imgedit"><img src={headPng} /></div>
+      <div className="imgedit"><img src={headPng} alt="COVID-19" /></div>
       <Grid className="gridEdit">
         <Row gutter={10}>
           <Col xs={24} sm={24} md={10} lg={6}>

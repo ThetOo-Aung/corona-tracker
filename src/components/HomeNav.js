@@ -1,13 +1,15 @@
 import React from "react";
-import { Nav, Icon, Navbar, Dropdown, Button } from "rsuite";
+import { Nav, Icon, Navbar, Dropdown } from "rsuite";
 import "./HomeNav.css";
+
+
 
 const HomeNav = () => {
   return (
     <div className="HomeNav">
       <Navbar>
         <Navbar.Header>
-          <a href="/">Covid-Tracker</a>
+          <a href="/"><i className="fa fa-globe"></i> &nbsp;Covid-Tracker</a>
         </Navbar.Header>
         <Navbar.Body>
           <Nav pullRight>

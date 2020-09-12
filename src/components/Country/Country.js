@@ -25,7 +25,7 @@ const Country = ({ handleCountrySelect }) => {
   return (
     <div className="Country">
       <Panel bordered shaded>
-        <h5>Live</h5>
+        <h5><i className="fa fa-play-circle" style={{color:"red"}}> </i> Live Status</h5>
         <hr></hr>
         <h5>Stats Overview</h5>
 

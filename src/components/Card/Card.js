@@ -13,9 +13,9 @@ const Card = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
             <h4>
               {confirmed.value && (
                 <CountUp
-                  start={1000000}
+                  start={1000}
                   end={confirmed.value}
-                  duration={3}
+                  duration={2}
                 ></CountUp>
               )}
             </h4>

@@ -20,6 +20,7 @@
   padding: 0px !important;
   padding-top: 20px !important ;
   margin: 0px !important;
+  
 }
 .Card .rs-divider-inner-text {
   padding: 0px !important;
@@ -28,14 +29,15 @@
 .Card .editCard {
   width: 33%;
   margin: 0 10px;
-  
 }
 .Card h4 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   text-align: center;
   padding-right: 10px;
+  margin-bottom: 40px;
 }
 .Card h6 {
   padding: 10px;
   text-align: center;
+  background-color: rgba(97, 97, 97, 0.7);
 }
