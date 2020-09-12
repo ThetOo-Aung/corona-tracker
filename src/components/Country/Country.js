@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Country.css";
-import { Panel, Form} from "rsuite";
+import { Panel, Form } from "rsuite";
 import Axios from "axios";
 
 const Country = ({ handleCountrySelect }) => {
@@ -25,16 +25,15 @@ const Country = ({ handleCountrySelect }) => {
   return (
     <div className="Country">
       <Panel bordered shaded>
-        <h5><i className="fa fa-play-circle" style={{color:"red"}}> </i> Live Status</h5>
+        <h5 style={{ color: "red" }}>
+          <i className="fa fa-play-circle"></i>
+          &nbsp;Live Status
+        </h5>
         <hr></hr>
         <h5>Stats Overview</h5>
 
         <Form>
-          <select
-            
-            onChange={(event) => handleCountrySelect(event.target.value)}
-          >
-         
+          <select onChange={(event) => handleCountrySelect(event.target.value)}>
             <option value="">Global</option>
             {fetchedCountries &&
               fetchedCountries.map((country, i) => (

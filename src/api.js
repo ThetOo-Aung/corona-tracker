@@ -17,6 +17,7 @@ export const fetchData = async (country) => {
   }
 };
 
+
 export const fetchDailyData = async () => {
   try {
     const { data } = await Axios.get(`${url}/daily`);
