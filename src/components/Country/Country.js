@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Country.css";
-import { Panel, Form } from "rsuite";
+import { Panel, Form} from "rsuite";
 import Axios from "axios";
 
 const Country = ({ handleCountrySelect }) => {
@@ -34,6 +34,7 @@ const Country = ({ handleCountrySelect }) => {
             
             onChange={(event) => handleCountrySelect(event.target.value)}
           >
+         
             <option value="">Global</option>
             {fetchedCountries &&
               fetchedCountries.map((country, i) => (

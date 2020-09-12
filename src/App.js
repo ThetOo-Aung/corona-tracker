@@ -4,8 +4,11 @@ import Country from "./components/Country/Country";
 import Card from "./components/Card/Card";
 import Chart from "./components/Chart/Chart";
 import "rsuite/dist/styles/rsuite-default.css";
-import { Grid, Row, Col } from "rsuite";
+
 import { fetchData } from "./api.js";
+import HomeNav from "./components/HomeNav";
+import { Row, Grid, Col } from "rsuite";
+
 
 function App() {
   const [country, setCountry] = useState("");
@@ -28,19 +31,20 @@ function App() {
   }, []);
 
   return (
-    <div className="App ">
-      <Grid>
-        <Row className="show-grid">
-          <Col md={6} sm={12}>
+    <div className="App">
+      <HomeNav></HomeNav>
+      {/* <div className="layoutforCardandCountry"></div> */}
+
+      <Grid >
+        <Row gutter={16}>
+        <Col xs={24} sm={24} md={10} lg={6}>
             <Country handleCountrySelect={handleCountrySelect}></Country>
           </Col>
-          <Col md={6} sm={12}>
-            {data && <Card data={data}></Card>}
-          </Col>
+          <Col xs={24} sm={24} md={14} lg={18}> {data && <Card data={data}></Card>} </Col>
         </Row>
       </Grid>
 
-      <Chart></Chart>
+      {data && <Chart data={data} country={country}></Chart>}
     </div>
   );
 }

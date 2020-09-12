@@ -1,0 +1,7 @@
+.HomeNav {
+  height: 75px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

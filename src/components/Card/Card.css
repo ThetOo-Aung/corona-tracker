@@ -1,3 +1,13 @@
+.Card  .cardcontainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.Card {
+  width: 100%;
+}
+
 .Card .rs-panel-heading {
   letter-spacing: 1px;
   font-weight: 700;
