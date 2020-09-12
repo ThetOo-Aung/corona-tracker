@@ -1,0 +1,12 @@
+.Card .rs-panel-heading {
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding-bottom: 10px;
+  z-index: 2;
+}
+.Card hr {
+  margin: 5px;
+}
+.Card .rs-panel-body {
+  padding-top: 0px !important;
+}
