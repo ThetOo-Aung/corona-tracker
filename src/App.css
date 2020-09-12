@@ -1,26 +1,21 @@
- /* .App {
-  text-align: center;
-  background-image: url(./img/covid.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  color: white;
-  height: 100vh;
-}  */
 .App {
-  overflow-x: hidden;
-  margin: 0 auto;
-  width: 90%;
+  
+  
 }
 .body{
   background-color: rgb(250, 250, 250);
 }
 
-/* .App .layoutforCardandCountry {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  margin: 0 auto;
-  
-} */
+.App .gridEdit{
+  margin-bottom: 50px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App .imgedit {
+  text-align: center;
+  margin: 40px 0;
+}

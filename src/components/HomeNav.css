@@ -1,7 +1,18 @@
-.HomeNav {
-  height: 75px;
-  width: 100vw;
+.HomeNav .rs-navbar-header {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
+  font-size: 30px;
+}
+
+.HomeNav .rs-navbar-header a {
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+.HomeNav {
+  margin-bottom: 20px;
+}
+.HomeNav .rs-navbar {
+  background-color: rgb(202, 200, 200);
 }

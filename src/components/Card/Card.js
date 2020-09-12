@@ -1,6 +1,6 @@
 import React from "react";
 import "./Card.css";
-import { Panel } from "rsuite";
+import { Panel, Divider } from "rsuite";
 import CountUp from "react-countup";
 
 // last Update not included
@@ -9,10 +9,8 @@ const Card = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
     <div className="Card">
       {confirmed && recovered && deaths && (
         <div className="cardcontainer">
-          <Panel bordered header="Confirmed" shaded className="editCard">
-            <hr></hr>
-            <h5>Stats Overview</h5>
-            <h6>
+          <Panel bordered shaded className="editCard" style={{backgroundColor:" rgb(255,245,245)"}}>
+            <h4>
               {confirmed.value && (
                 <CountUp
                   start={1000000}
@@ -20,13 +18,14 @@ const Card = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
                   duration={3}
                 ></CountUp>
               )}
-            </h6>
+            </h4>
+            
+            <Divider>{new Date(lastUpdate).toDateString()}</Divider>
+            <h6  style={{backgroundColor: "rgb(254,215,215)"}}>Confirmed</h6>
           </Panel>
 
-          <Panel bordered header="Recovered" shaded>
-            <hr></hr>
-            <h5>Stats Overview</h5>
-            <h6>
+          <Panel bordered shaded className="editCard" style={{backgroundColor:"rgb(240,255,244)"}}>
+            <h4>
               {recovered.value && (
                 <CountUp
                   start={10000}
@@ -34,13 +33,13 @@ const Card = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
                   duration={3}
                 ></CountUp>
               )}
-            </h6>
+            </h4>
+            <Divider>{new Date(lastUpdate).toDateString()}</Divider>
+            <h6  style={{backgroundColor: "rgb(198,246,213)"}}>Recovered</h6>
           </Panel>
 
-          <Panel bordered header="Deaths" shaded>
-            <hr></hr>
-            <h5>Stats Overview</h5>
-            <h6>
+          <Panel bordered shaded className="editCard" style={{backgroundColor:"rgb(237,242,247)"}}>
+            <h4>
               {deaths.value && (
                 <CountUp
                   start={10000}
@@ -48,7 +47,9 @@ const Card = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
                   duration={3}
                 ></CountUp>
               )}
-            </h6>
+            </h4>
+            <Divider>{new Date(lastUpdate).toDateString()}</Divider>
+            <h6  style={{backgroundColor: "rgb(226,232,240)"}}>Deaths</h6>
           </Panel>
         </div>
       )}
